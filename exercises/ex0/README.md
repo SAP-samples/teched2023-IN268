@@ -36,10 +36,45 @@ Here, you can see all the parameters of the rules, such as Rule Match Value, Ass
 ## Create Data Extraction Request
 After completing these steps you will have....
 
-1.	Click here.
+1.	In the Migration Assessment Application, navigate to   Request  Data Extraction.
+   <br>![](/exercises/ex0/images/00_00_0010.png)
+2. We recommend you to reuse the already existing request as creating a new one would take few minutes.
+   <br>![](/exercises/ex0/images/00_00_0010.png)
+4. (Optional) If you like to create a new request, select  Create, then enter a Request Name (maybe append with your unique identifier) and select the System you want to connect to (in our case it is J2EE from the drop down).
+5. The data extraction starts. It should show status In Process. From time to time, you can refresh to check if the request has been completed.
+6. Once the extraction finishes, the new request appears in the list of data extraction requests with status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
+7. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filer on the log level. Furthermore, you can download the log in excel format.![image](https://github.com/SAP-samples/teched2023-IN268/assets/144697312/d69264fe-097c-4951-b634-70f0e7f3c663)
+
+## Create a Scenario Evaluation Request
+
+Assess your integration scenarios using the information from the data extraction requests. The prerequisite is that you have at least one data extraction request in status Completed.
 <br>![](/exercises/ex0/images/00_00_0010.png)
 
-2.	Insert this code.
+1. In the Migration Assessment application, navigate to  Request  Scenario Evaluation, and select  Create
+2. Enter a Request Name as DemoXX (where XX is your user from 00 to 99)and choose a Data Extraction Request from the drop down or the one you executed previously. For this specific run of your scenario evaluation, enter an Evaluation Run Name as DemoXX (where XX is your user from 00 to 99)and a Description.
+Note: You usually run a new evaluation request for a new data extraction whereas you run a new evaluation run whenever the assessment rules have been changed. Select  Create.
+3. The new request appears in the list of scenario evaluation requests in Status In Progress. 
+4. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
+   
+## Create a Scenario Evaluation Request
+
+1. Let’s start with opening the dashboard. Select the  Open Dashboard icon.
+
+2. The dashboard shows you an analysis of your scenario evaluation runs with details specific to your integration scenarios, i.e., scenarios grouped by assessment categories, scenarios grouped by rough t-shirt effort estimation, statistics about adapters used in your integration scenarios, etc. You can switch between the data of all runs performed for the scenario evaluation request so far (note, if you haven’t triggered another analysis, there is only one entry in the drop-down menu).
+3. Switch to the Integration Scenarios tab, and you see the list of all integration scenarios including effort size and assessment category.
+4. Switch back to the list of Scenario Evaluation requests. From the Additional Options menu, you can select  Trigger Analysis to schedule a new evaluation run based on current data.!
+
+5. Furthermore, you have the option to  Download details about the latest evaluation run either in an Excel format or as a pdf file.
+6. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
+7. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.![image](https://github.com/SAP-samples/teched2023-IN268/assets/144697312/84643e2e-ac27-4ec7-ab36-c46332002e55)
+
+
+
+
+
+
+
+8.	Insert this code.
 ``` abap
  DATA(params) = request->get_form_fields(  ).
  READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
