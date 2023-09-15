@@ -6,7 +6,10 @@ In this exercise, you will learn out how to migrate your existing integration sc
 After completing these steps you will be able to see the SAP Integration Suite landing page and all the capabilities offered as part of the SAP Integration Suite
 
 1. Click on the link https://teched23blr07.integrationsuite.cfapps.ap10.hana.ondemand.com/shell/home
-2. Enter User as userXX (where XX is from 00 to 99) and Password as Welcome1
+2. Enter User as userXX (where XX is from 00 to 99) and Password as Welcome1 and Click on Log On.
+   <br>![](/exercises/ex0/images/Login.png)
+3. In the SAP Integration Suite landing page, scroll down to Capabilities, and select   Create Requests from the Assess Migration Scenarios tile.
+  <br>![](/exercises/ex0/images/Login.png)
 ## Checkout Configuration for Process Orchestration System
 
 
