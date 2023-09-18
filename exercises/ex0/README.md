@@ -42,15 +42,16 @@ After completing these steps you will have....
    <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 4. (Optional) If you like to create a new request, select  Create, then enter a Request Name (maybe append with your unique identifier) and select the System you want to connect to (in our case it is J2EE from the drop-down).
    <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
-6. The data extraction starts. It should show the status In Process. From time to time, you can refresh to check if the request has been completed.
+5. The data extraction starts. It should show the status In Process. From time to time, you can refresh to check if the request has been completed.
    <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
-7. Once the extraction finishes, the new request appears in the list of data extraction requests with the status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
-8. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filter on the log level. Furthermore, you can download the log in Excel format.
-
+6. Once the extraction finishes, the new request appears in the list of data extraction requests with the status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
+   <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
+7. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filter on the log level. Furthermore, you can download the log in Excel format.
+   <br>![](/exercises/ex0/images/Ext_Logs.png)
 ## Create a Scenario Evaluation Request
 
 Assess your integration scenarios using the information from the data extraction requests. The prerequisite is that you have at least one data extraction request in status Completed.
-<br>![](/exercises/ex0/images/00_00_0010.png)
+<br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 
 1. In the Migration Assessment application, navigate to  Request  Scenario Evaluation, and select  Create
 2. Enter a Request Name as DemoXX (where XX is your user from 00 to 99)and choose a Data Extraction Request from the drop down or the one you executed previously. For this specific run of your scenario evaluation, enter an Evaluation Run Name as DemoXX (where XX is your user from 00 to 99)and a Description.
