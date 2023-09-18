@@ -20,7 +20,7 @@ Note: For this exercise, the connection to a cloud connector running on the CAL 
    <br>![](/exercises/ex0/images/View_PO_System.png)
 2. (Optional)After adding the system if you are setting it up in your own tenant, you can test the connection if it is successful or not. To change the connection details, you can edit it too.
 3. For this exercise, system setup is already done and you click on Test Connection to check the connection to PO system.
-   <br>![](/exercises/ex0/images/Login.png)
+   <br>![](/exercises/ex0/images/Test_PO_Con.png)
 In the Migration Assessment Application, the page now displays information about the Integration Directory and, optionally, the Enterprise Services Repository you connected to your previously created system.
 
 4. In the Migration Assessment Application, navigate to Configure > Rules.
@@ -37,13 +37,15 @@ Here, you can see all the parameters of the rules, such as Rule Match Value, Ass
 After completing these steps you will have....
 
 1.	In the Migration Assessment Application, navigate to   Request  Data Extraction.
-   <br>![](/exercises/ex0/images/00_00_0010.png)
-2. We recommend you to reuse the already existing request as creating a new one would take a few minutes.
-   <br>![](/exercises/ex0/images/00_00_0010.png)
+   <br>![](/exercises/ex0/images/Request_Data_Ext.png)
+2. We recommend you reuse the already existing request as creating a new one would take a few minutes.
+   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 4. (Optional) If you like to create a new request, select  Create, then enter a Request Name (maybe append with your unique identifier) and select the System you want to connect to (in our case it is J2EE from the drop-down).
-5. The data extraction starts. It should show the status In Process. From time to time, you can refresh to check if the request has been completed.
-6. Once the extraction finishes, the new request appears in the list of data extraction requests with the status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
-7. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filter on the log level. Furthermore, you can download the log in Excel format.
+   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
+6. The data extraction starts. It should show the status In Process. From time to time, you can refresh to check if the request has been completed.
+   <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
+7. Once the extraction finishes, the new request appears in the list of data extraction requests with the status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
+8. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filter on the log level. Furthermore, you can download the log in Excel format.
 
 ## Create a Scenario Evaluation Request
 
