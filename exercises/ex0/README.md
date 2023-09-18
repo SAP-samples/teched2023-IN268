@@ -41,11 +41,11 @@ After completing these steps you will have....
 2. We recommend you reuse the already existing request as creating a new one would take a few minutes.
    <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 4. (Optional) If you like to create a new request, select  Create, then enter a Request Name (maybe append with your unique identifier) and select the System you want to connect to (in our case it is J2EE from the drop-down).
-   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
+   <br>![](/exercises/ex0/images/New_Data_Ext.png)
 5. The data extraction starts. It should show the status In Process. From time to time, you can refresh to check if the request has been completed.
    <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
 6. Once the extraction finishes, the new request appears in the list of data extraction requests with the status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
-   <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
+   <br>![](/exercises/ex0/images/Completed_Data_Ext.png)
 7. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filter on the log level. Furthermore, you can download the log in Excel format.
    <br>![](/exercises/ex0/images/Ext_Logs.png)
 ## Create a Scenario Evaluation Request
