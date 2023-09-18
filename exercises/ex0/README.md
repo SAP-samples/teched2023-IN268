@@ -38,12 +38,12 @@ After completing these steps you will have....
 
 1.	In the Migration Assessment Application, navigate to   Request  Data Extraction.
    <br>![](/exercises/ex0/images/00_00_0010.png)
-2. We recommend you to reuse the already existing request as creating a new one would take few minutes.
+2. We recommend you to reuse the already existing request as creating a new one would take a few minutes.
    <br>![](/exercises/ex0/images/00_00_0010.png)
-4. (Optional) If you like to create a new request, select  Create, then enter a Request Name (maybe append with your unique identifier) and select the System you want to connect to (in our case it is J2EE from the drop down).
-5. The data extraction starts. It should show status In Process. From time to time, you can refresh to check if the request has been completed.
-6. Once the extraction finishes, the new request appears in the list of data extraction requests with status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
-7. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filer on the log level. Furthermore, you can download the log in excel format.![image](https://github.com/SAP-samples/teched2023-IN268/assets/144697312/d69264fe-097c-4951-b634-70f0e7f3c663)
+4. (Optional) If you like to create a new request, select  Create, then enter a Request Name (maybe append with your unique identifier) and select the System you want to connect to (in our case it is J2EE from the drop-down).
+5. The data extraction starts. It should show the status In Process. From time to time, you can refresh to check if the request has been completed.
+6. Once the extraction finishes, the new request appears in the list of data extraction requests with the status Completed. Choose the  Check extraction logs icon to view the data extraction log which provides you with details about the data extraction.
+7. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filter on the log level. Furthermore, you can download the log in Excel format.
 
 ## Create a Scenario Evaluation Request
 
