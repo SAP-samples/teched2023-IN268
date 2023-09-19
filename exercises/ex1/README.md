@@ -1,8 +1,10 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 Migration Tool
 
-In this exercise, we will create...
+After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Migration Assessment capability, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in SAP Cloud Integration will be automatically created based on PI Elevation content, so that ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as skeleton to migrate the content and create the final integration flows. Additional templates are already on the roadmap. 
 
-## Exercise 1.1 Sub Exercise 1 Description
+
+## Create a Cloud Integration package
+
 
 After completing these steps you will have created...
 
@@ -16,7 +18,13 @@ response->set_text( |Hello World! | ).
 
 
 
-## Exercise 1.2 Sub Exercise 2 Description
+## Migrate SAP Process Orchestration Artifacts (SOAP to SOAP scenario)
+
+## Deploy migrated artifacts
+
+## Test it via Insomnia
+
+
 
 After completing these steps you will have...
 
