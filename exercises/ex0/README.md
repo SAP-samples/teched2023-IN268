@@ -54,10 +54,14 @@ Assess your integration scenarios using the information from the data extraction
 <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 
 1. In the Migration Assessment application, navigate to  Request  Scenario Evaluation, and select  Create
+   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 2. Enter a Request Name as DemoXX (where XX is your user from 00 to 99)and choose a Data Extraction Request from the drop down or the one you executed previously. For this specific run of your scenario evaluation, enter an Evaluation Run Name as DemoXX (where XX is your user from 00 to 99)and a Description.
+  <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 Note: You usually run a new evaluation request for a new data extraction whereas you run a new evaluation run whenever the assessment rules have been changed. Select  Create.
-3. The new request appears in the list of scenario evaluation requests in Status In Progress. 
-4. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
+3. The new request appears in the list of scenario evaluation requests in Status In Progress.
+   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
+5. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
+   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
    
 ## Create a Scenario Evaluation Request
 
