@@ -1,6 +1,6 @@
 # Exercise 1 Migration Tool
 
-After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Migration Assessment capability, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in SAP Cloud Integration will be automatically created based on PI Elevation content, so that ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as a skeleton to migrate the content and create the final integration flows. Additional templates are already on the roadmap. 
+After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Migration Assessment capability, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in SAP Cloud Integration will be automatically created based on PI Elevation content, so that ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as a skeleton to migrate the content and create the final integration flows. Additional templates are already on the roadmap.
 
 
 ## Create a Cloud Integration package
