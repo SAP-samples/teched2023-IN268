@@ -48,24 +48,28 @@ After completing these steps you will have....
    <br>![](/exercises/ex0/images/Completed_Data_Ext.png)
 7. The log shows you the different steps of the data extraction, its progress if still In Progress, warnings and errors during the extraction, etc. In the log, you can filter on the log level. Furthermore, you can download the log in Excel format.
    <br>![](/exercises/ex0/images/Ext_Logs.png)
+   
 ## Create a Scenario Evaluation Request
 
 Assess your integration scenarios using the information from the data extraction requests. The prerequisite is that you have at least one data extraction request in status Completed.
 <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 
 1. In the Migration Assessment application, navigate to  Request  Scenario Evaluation, and select  Create
-   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
-2. Enter a Request Name as DemoXX (where XX is your user from 00 to 99)and choose a Data Extraction Request from the drop down or the one you executed previously. For this specific run of your scenario evaluation, enter an Evaluation Run Name as DemoXX (where XX is your user from 00 to 99)and a Description.
-  <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
-Note: You usually run a new evaluation request for a new data extraction whereas you run a new evaluation run whenever the assessment rules have been changed. Select  Create.
-3. The new request appears in the list of scenario evaluation requests in Status In Progress.
-   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
-5. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
-   <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
+   <br>![](/exercises/ex0/images/New_Data_Ext.png)
    
-## Create a Scenario Evaluation Request
+2. Enter a Request Name as DemoXX (where XX is your user from 00 to 99)and choose a Data Extraction Request from the drop-down or the one you executed previously. For this specific run of your scenario evaluation, enter an Evaluation Run Name as DemoXX (where XX is your user from 00 to 99)and a Description.
+  <br>![](/exercises/ex0/images/Create_Sce_Eval.png)
 
-1. Let’s start with opening the dashboard. Select the  Open Dashboard icon.
+Note: You usually run a new evaluation request for a new data extraction whereas you run a new evaluation run whenever the assessment rules have been changed. Select  Create.
+
+3. The new request appears in the list of scenario evaluation requests in Status In Progress.
+   <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
+   
+4. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
+   <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
+   
+
+Let’s start with opening the dashboard. Select the  Open Dashboard icon.
 
 2. The dashboard shows you an analysis of your scenario evaluation runs with details specific to your integration scenarios, i.e., scenarios grouped by assessment categories, scenarios grouped by rough t-shirt effort estimation, statistics about adapters used in your integration scenarios, etc. You can switch between the data of all runs performed for the scenario evaluation request so far (note, if you haven’t triggered another analysis, there is only one entry in the drop-down menu).
 3. Switch to the Integration Scenarios tab, and you see the list of all integration scenarios including effort size and assessment category.
