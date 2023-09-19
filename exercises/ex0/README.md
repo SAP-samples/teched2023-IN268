@@ -81,9 +81,9 @@ Note: You usually run a new evaluation request for a new data extraction whereas
 6. Furthermore, you have the option to  Download details about the latest evaluation run either in an Excel format or as a pdf file.
    <br>![](/exercises/ex0/images/Download_excel.png)
 8. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
-   <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
+   <br>![](/exercises/ex0/images/Excel.png)
 10. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.
-    <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
+    <br>![](/exercises/ex0/images/pdf.png)
 
 
 
