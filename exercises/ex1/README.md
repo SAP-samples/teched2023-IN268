@@ -11,31 +11,44 @@ In this exercise, we will migrate SOAP to SOAP interface. As a prerequisite, you
   <br>![](/exercises/ex1/images/Navigate_Back.png)
 2. Navigate to  Design  Integrations, and select  Create.
    <br>![](/exercises/ex1/images/Create_Pack.png)
-3. Fill in  the Name, e.g., Demo_<userxx> where xx is from 00 to 99, and a short description eg <Migrate SOAP to SOAP>. Then  Save.
-    <br>![](/exercises/ex1/images/Create_Pack.png)
-4. In the package you just created, you should be already in Edit mode. If not, on the top right click  Edit.
-5. Click on  Migrate to start the migration wizard.
-   <br>![](/exercises/ex1/images/Migrate.png)
-6. Select the SAP Process Orchestration system for which the assessment was previously done. For this expand the  Name section and select your system from the drop-down menu. click  Next Step to proceed with configuring the scenario.
-    <br>![](/exercises/ex1/images/PO_sys.png)
-7. Currently, only Integrated Configuration Objects (ICO) are supported. You can use the filter to filter out the list of ICOs and choose the appropriate scenario.  Click on Show Filters and fill in “http://pi-elevation.bootcamp.com“ as Namespace. Choose the interface “SI_NumberConversion_Out” from the drop-down list. Click  Next Step.
-   <br>![](/exercises/ex1/images/Namespace_Next.png)
+3. Fill in  the Name, e.g., Demo_<userxx> where xx is from 00 to 99, and a short description eg <Migrate SOAP to SOAP ICO>. Then  Save.
+    <br>![](/exercises/ex1/images/Save_Pack.png)
+   
+## Migrate SAP Process Orchestration Artifacts (SOAP to SOAP scenario)
 
+1. In the package you just created, you should be already in Edit mode. If not, on the top right click  Edit.
+2. Click on  Migrate to start the migration wizard.
+   <br>![](/exercises/ex1/images/Migrate.png)
+3. Select the SAP Process Orchestration system for which the assessment was previously done. For this expand the  Name section and select your system from the drop-down menu. click  Next Step to proceed with configuring the scenario.
+    <br>![](/exercises/ex1/images/PO_sys.png)
+4. Currently, only Integrated Configuration Objects (ICO) are supported. You can use the filter to filter out the list of ICOs and choose the appropriate scenario.  Click on Show Filters and fill in “http://pi-elevation.bootcamp.com“ as Namespace. Choose the interface “SI_NumberConversion_Out” from the drop-down list. Click  Next Step.
+   <br>![](/exercises/ex1/images/Namespace_Next.png)
+5. The best-fit template is identified by the migration framework and will be automatically filled in for you. In this case, it will be “P2P_SYNC_0001”. Click  Next Step.
+    <br>![](/exercises/ex1/images/Template.png)
+6. Maintain any Name for your integration flow, e.g., following the pattern: soap_to_soap_sync_<your userxx> where xx is from 00 to 99. Note, that the ID of your integration flow needs to be unique across all integration flows on the tenant. Click on  Review.
+    <br>![](/exercises/ex1/images/Int_Name_Review.png)
+7. Verify the information and then click on  Migrate.
+    <br>![](/exercises/ex1/images/Final_Migrate.png)
+8. A new integration flow has been generated within your package. Click on the artifact to take a closer look at each individual step. The required information is automatically populated such as the connection information. You can close this window.
+    <br>![](/exercises/ex1/images/Close_Artifact.png)
+
+    ## Deploy migrated artifacts
+    
+1.  Click on the  SOAP Adapter and view the  Connection details. You can see that the endpoint address has been automatically set based on the integration flow name that you have entered.
+    <br>![](/exercises/ex1/images/Open_Iflow.png)
+2. For this particular scenario, no manual steps need to be carried out. It should run as is. Select  Deploy to get the integration flow deployed on the tenant runtime.
+    <br>![](/exercises/ex1/images/Deploy_Con.png)
+3. You can check the deployment status via the monitor dashboard. Navigate to  Monitor  Integrations, and select the Manage Integration Content tile.
+    <br>![](/exercises/ex1/images/Monitor_Int.png)
+4. Your integration flow should be in status Started. From here, you get displayed the endpoint that you need to call to test the scenario. Copy the endpoint as we will use it in the next step.
+    <br>![](/exercises/ex1/images/Copy_endpoint.png)
+5. Verify the interface with Insomnia. In the Postman collection “PI Elevation” open the “Number Conversion Request”, and update the URL so that it fits the end point of your integration flow, under authentication fill in the Process Integration Client ID (obtained from the tenant booker app )for username and Process Integration Client Secret (obtained from tenant booker app) for password and click on Send. The request should return HTTP code 200 and a response with the converted text.
+  
 After completing these steps you will have created...
 
 1. Click here.
 <br>![](/exercises/ex1/images/01_01_0010.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
-
-
-
-## Migrate SAP Process Orchestration Artifacts (SOAP to SOAP scenario)
-
-## Deploy migrated artifacts
 
 ## Test it via Insomnia
 
@@ -43,17 +56,7 @@ response->set_text( |Hello World! | ).
 
 After completing these steps you will have...
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
 
-```
 
 2.	Click here.
 <br>![](/exercises/ex1/images/01_02_0010.png)
