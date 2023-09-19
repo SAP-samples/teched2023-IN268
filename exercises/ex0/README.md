@@ -68,24 +68,30 @@ Note: You usually run a new evaluation request for a new data extraction whereas
 4. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
    <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
    
+## View Generated Reports
 
-Let’s start with opening the dashboard. Select the  Open Dashboard icon.
-
+1. Let’s start with opening the dashboard. Select the  Open Dashboard icon.
+   <br>![](/exercises/ex0/images/Open_Dash.png)
 2. The dashboard shows you an analysis of your scenario evaluation runs with details specific to your integration scenarios, i.e., scenarios grouped by assessment categories, scenarios grouped by rough t-shirt effort estimation, statistics about adapters used in your integration scenarios, etc. You can switch between the data of all runs performed for the scenario evaluation request so far (note, if you haven’t triggered another analysis, there is only one entry in the drop-down menu).
+   <br>![](/exercises/ex0/images/Overview_Dash.png)
 3. Switch to the Integration Scenarios tab, and you see the list of all integration scenarios including effort size and assessment category.
-4. Switch back to the list of Scenario Evaluation requests. From the Additional Options menu, you can select  Trigger Analysis to schedule a new evaluation run based on current data.!
+   <br>![](/exercises/ex0/images/Dashboard.png)
+5. Switch back to the list of Scenario Evaluation requests. From the Additional Options menu, you can select  Trigger Analysis to schedule a new evaluation run based on current data.
+   <br>![](/exercises/ex0/images/Trigger_Analysis.png)   
+6. Furthermore, you have the option to  Download details about the latest evaluation run either in an Excel format or as a pdf file.
+   <br>![](/exercises/ex0/images/Download_excel.png)
+8. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
+   <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
+10. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.
+    <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
 
-5. Furthermore, you have the option to  Download details about the latest evaluation run either in an Excel format or as a pdf file.
-6. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
-7. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.![image](https://github.com/SAP-samples/teched2023-IN268/assets/144697312/84643e2e-ac27-4ec7-ab36-c46332002e55)
 
 
 
 
 
 
-
-8.	Insert this code.
+11.	Insert this code.
 ``` abap
  DATA(params) = request->get_form_fields(  ).
  READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
