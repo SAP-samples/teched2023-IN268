@@ -46,21 +46,27 @@ In this exercise, we will migrate SOAP to SOAP interface. As a prerequisite, you
   
 After completing these steps you will have created...
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
-
-
-## Test it via Insomnia
-
-
+## Verify the Interface via Insomnia
 
 After completing these steps you will have...
 
+1. Open  Insomnia and click on Import.
+   <br>![](/exercises/ex1/images/Insom_Import.png)
+   
+2.  Drag and drop PI Elevation_Demo.json file  from your system to Insomnia UI and click on Scan
+   <br>![](/exercises/ex1/images/Insom_Scan.png)
 
-
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
-
+3. Click on Import
+    <br>![](/exercises/ex1/images/Insom_ImportClick.png)
+   
+4. Expand PI Elevation_Demo collection and you should be able to see 3 requests
+   <br>![](/exercises/ex1/images/Insom_3Req.png)
+   
+5. From the collection “PI Elevation_Demo” open the “Number Conversion Request”, and update the URL so that it fits to the end point of your integration flow, under authentication fill in the Process Integration Client ID (obtained from the tenant booker app )for username and Process Integration Client Secret (obtained from tenant booker app) for password and click on Send.
+   <br>![](/exercises/ex1/images/Insoma_Final_Test.png)
+   
+6. The request should return HTTP code 200 and a response with the converted text.
+  <br>![](/exercises/ex1/images/Insom_200_OK.png)
 
 ## Summary
 
