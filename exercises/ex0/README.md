@@ -1,29 +1,38 @@
 # Migration Assessment
 
-In this exercise, you will learn out how to migrate your existing integration scenarios to SAP Integration Suite with the Migration Assessment. This offering helps you estimate the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated.
+In this exercise, you will learn how to migrate your existing integration scenarios to SAP Integration Suite with the Migration Assessment. This offering helps you estimate the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated.
 
 ## Login to Integration Suite tenant
-After completing these steps you will be able to see the SAP Integration Suite landing page and view the Migration Assessment and Cloud Integration  capabilities offered as part of the SAP Integration Suite
+
+After completing these steps you will be able to see the SAP Integration Suite landing page and view the Migration Assessment and Cloud Integration capabilities offered as part of SAP Integration Suite
 
 1. Click on the link https://teched23blr07.integrationsuite.cfapps.ap10.hana.ondemand.com/shell/home
+   
 2. Enter User as userXX (where XX is from 00 to 99) and Password as Welcome1 and Click on Log On.
    <br>![](/exercises/ex0/images/Login.png)
+   
 3. In the SAP Integration Suite landing page, scroll down to Capabilities, and select   Create Requests from the Assess Migration Scenarios tile.
-  Navigate to Settings and Select J2EE System to view the details.
+
+4. Navigate to Settings and Select J2EE System to view the details.
    <br>![](/exercises/ex0/images/Access_Migration_Scenarios.png)
 
 ## Checkout Configuration for Process Orchestration System
-After completing these steps you will be able to test the connection between the Integration Suite tenant and PO system. Additionally, we will also walk you through the steps on how to setup your own PO system.
-Note: For this exercise, the connection to a cloud connector running on the CAL system has been established, PO System is connected to the Integration Suite tenant and you do not have Admin roles to add a system.
+
+After completing these steps you will be able to test the connection between the Integration Suite tenant and PO system. Additionally, we will also walk you through the steps on how to set up your own PO system. This will help you to do the setup on your own landscape.
+
+Note: For this exercise, the connection to a cloud connector running on the CAL system has been established, the PO system is connected to the SAP Integration Suite tenant and you do not have Admin roles to add a system.
 
 1. Navigate to Settings and Select J2EE System to view the details.
    <br>![](/exercises/ex0/images/View_PO_System.png)
-2. (Optional)After adding the system if you are setting it up in your own tenant, you can test the connection if it is successful or not. To change the connection details, you can edit it too.
-3. For this exercise, system setup is already done and you click on Test Connection to check the connection to PO system.
+   
+4. (Optional)After adding the system if you are setting it up in your own tenant, you can test the connection if it is successful or not. To change the connection details, you can edit it too.
+5. 
+6. For this exercise, system setup is already done and you click on Test Connection to check the connection to PO system.
    <br>![](/exercises/ex0/images/Test_PO_Con.png)
+   
 In the Migration Assessment Application, the page now displays information about the Integration Directory and, optionally, the Enterprise Services Repository you connected to your previously created system.
 
-4. In the Migration Assessment Application, navigate to Configure > Rules.
+7. In the Migration Assessment Application, navigate to Configure > Rules.
    <br>![](/exercises/ex0/images/Configure_Rule.png)
 Here you can find a list of rules predefined by SAP. Rules are a set of characteristics according to which the application evaluates whether an integration scenario can be migrated and what effort you can expect.
 
@@ -32,6 +41,18 @@ Note: Currently, you can’t add custom rules or edit the standard rules. You ca
 5. As an example, select the rule SenderAdapterType
    <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
 Here, you can see all the parameters of the rules, such as Rule Match Value, Assessment Category, and the Weight assigned to each rule match value. Based on these weights, the application calculates the estimated effort, which means that some parameters, and therefore rules, have a bigger influence on the final estimation than others.
+
+## Optional Add a Process Orchestration System
+Optionally you can add the PO system. For this exercise, you do not have the roles to Add the system but we want to walk you through the steps so that you can do it on your landscape.
+
+1. Navigate back to Settings and click on Add
+   <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
+   
+2. Fill in the details and click on Create.
+   <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
+   
+3. You will be able to see the newly added systems and additionally you can check the connection by clicking on the Test connection
+   <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
    
 ## Create Data Extraction Request
 After completing these steps you will have....
