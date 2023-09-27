@@ -99,22 +99,31 @@ Note: You usually run a new evaluation request for a new data extraction whereas
    
 ## View Generated Reports
 
+Access and download analysis of your scenario evaluation runs with details specific to your integration scenarios, for example, adapters and an overview of the rules used in the evaluation. Further, you can download details about the latest evaluation run in one of two formats .xlsx file and .pdf file
+
 1. Let’s start with opening the dashboard. Select the  Open Dashboard icon.
    <br>![](/exercises/ex0/images/Open_Dash.png)
+   
 2. The dashboard shows you an analysis of your scenario evaluation runs with details specific to your integration scenarios, i.e., scenarios grouped by assessment categories, scenarios grouped by rough t-shirt effort estimation, statistics about adapters used in your integration scenarios, etc. You can switch between the data of all runs performed for the scenario evaluation request so far (note, if you haven’t triggered another analysis, there is only one entry in the drop-down menu).
    <br>![](/exercises/ex0/images/Overview_Dash.png)
+   
 3. Switch to the Integration Scenarios tab, and you see the list of all integration scenarios including effort size and assessment category.
    <br>![](/exercises/ex0/images/Dashboard.png)
-5. Switch back to the list of Scenario Evaluation requests. From the Additional Options menu, you can select  Trigger Analysis to schedule a new evaluation run based on current data.
-   <br>![](/exercises/ex0/images/Trigger_Analysis.png)   
-6. Furthermore, you have the option to  Download details about the latest evaluation run either in an Excel format or as a pdf file.
+   
+4. Switch back to the list of Scenario Evaluation requests. From the Additional Options menu, you can select  Trigger Analysis to schedule a new evaluation run based on current data.
+   <br>![](/exercises/ex0/images/Trigger_Analysis.png)
+    
+5. Furthermore, you have the option to  download details about the latest evaluation run either in an Excel format or as a pdf file.
    <br>![](/exercises/ex0/images/Download_excel.png)
-8. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
+   
+6. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
    <br>![](/exercises/ex0/images/Excel.png)
-10. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.
+
+7. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.
     <br>![](/exercises/ex0/images/pdf.png)
 
-## Summary
+## Summary- Congratulations on having Assessed your landscape now!
 
-Now that you have ... 
+Once you have evaluated the migration possibility using the Migration Assessment capability of SAP Integration Suite, you are all set to migrate an integration artifact with the Migration tool.
+
 Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
