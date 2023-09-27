@@ -6,7 +6,7 @@ In this exercise, we will create migrate a SOAP to REST scenario. 9.	For this pa
 
 After completing these steps you will have migrated a SOAP to REST scenario and made the manual adjustements needed for the scenario to deploy successfully.
 
-1. Click here.
+1. 1.	Open your previously created package, and switch to the Artifacts tab, then switch to  Edit Mode.
 <br>![](/exercises/ex2/images/02_01_0010.png)
 
 2.	Insert this line of code.
