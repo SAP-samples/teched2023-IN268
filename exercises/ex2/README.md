@@ -88,7 +88,7 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 
 ## Summary
 
-You've now ...
+Congratulations..!! You've now successfully completed migration assessment and migrated scnearios from PI/PO to SAP Integration Suite using the migration tooling functionality.
 
 <!--
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
