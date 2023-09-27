@@ -30,6 +30,25 @@ In this exercise, we will create migrate a SOAP to REST scenario. 9.	For this pa
 <br>![](/exercises/ex2/images/5.0_View_iFlow_Changes_to_Make.png)
 
 
+10. Next, click on the  XML to JSON Converter and switch to the  Processing details. Select the  Suppress JSON Root Element.
+<br>![](/exercises/ex2/images/5.1_Edit_iFlow_XML_to_JSON.png)
+
+11.	In the HTTP connection of the “Request Reply”, verify that the Authentication is set to “Basic”. The credential name is automatically mapped from the REST receiver adapter on SAP Process Orchestration. This needs to be changed to the credential name maintained on the tenant, here maintain the Credential Name “PIMAS_Demo”.
+<br>![](/exercises/ex2/images/5.2_Edit_iFlow_Request_Reply.png)
+
+12.	Next, click on the  JSON to XML Converter and switch to the  Processing details. Enter “MT_Employee_RESP” as Name and select the namespace you created earlier.
+<br>![](/exercises/ex2/images/5.3_Edit_iFlow_JSON_to_XML.png)
+
+13.	Select  Save.
+
+14.	If you like to test the scenario, select  Deploy .Otherwise, you can proceed to the next scenario.
+<br>![](/exercises/ex2/images/5.3_Edit_iFlow_Deploy.png)
+
+15.	You can check whether your integration flow has been successfully deployed via the monitor dashboard.
+<br>![](/exercises/ex2/images/6.0_iFlow_Manage_Integration_Content.png)
+
+16.	Verify your interface with Insomia. In the Postman collection “Migration Exercise” open the “Exercise_2_Employee_Out”, update the URL so that it fits to the end point of your integration flow, and click on Send. The request should return HTTP code 200 and a response with the information that the employee has been created with success.
+<br>![](/exercises/ex2/images/7.0_Insomia_Check.png)
 
 
 
