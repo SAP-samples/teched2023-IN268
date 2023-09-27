@@ -47,10 +47,10 @@ Here, you can see all the parameters of the rules, such as Rule Match Value, Ass
 Optionally you can try out this section to add the PO system in your own landscape. For this exercise, you do not have the roles to Add the system but we want to walk you through the steps so that you can do it on your landscape.
 
 1. Navigate back to Settings and click on Add
-   <br>![](/exercises/ex0/images/1. AddNewPOSystem.png)
+   <br>![](/exercises/ex0/images/1.AddNewPOSystem.png)
    
 2. Fill in the details and click on Create.
-   <br>![](/exercises/ex0/images/2. PO_System_Details.png)
+   <br>![](/exercises/ex0/images/2.PO_System_Details.png)
    
 3. You will be able to see the newly added systems and additionally you can check the connection by clicking on the Test connection
    <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
