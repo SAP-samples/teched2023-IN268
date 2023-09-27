@@ -20,7 +20,10 @@ After having finished the assessment of the current SAP Process Orchestration la
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are:
+
+1. Download and intsall Insomnia. Please note that this is already done for the TechEd laptops.
+2. 
 
 ## Exercises
 
