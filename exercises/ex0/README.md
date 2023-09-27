@@ -53,7 +53,7 @@ Optionally you can try out this section to add the PO system in your own landsca
    <br>![](/exercises/ex0/images/2.PO_System_Details.png)
    
 3. You will be able to see the newly added systems and additionally you can check the connection by clicking on the Test connection
-   <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
+   <br>![](/exercises/ex0/images/3.TestPOConnection.png)
    
 ## Reuse or Create a new Data Extraction Request
 
