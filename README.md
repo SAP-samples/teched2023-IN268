@@ -34,7 +34,6 @@ The requirements and the steps to be followed for this exercise are below. Pleas
 5.1 Create Cloud Integration Package
 5.2 Use the Migrate option to migrate scenarios
 
-
 ## Exercises
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
