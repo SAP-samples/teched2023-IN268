@@ -1,14 +1,22 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-IN268)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-IN268)
 
-# Session ID - Session Title
+# IN268 - Start with the Right Mind-Set and Learn How to Modernize Your Integration
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2022 session called IN268 - Start with the Right Mind-Set and Learn How to Modernize Your Integration.  
+
+This session will guide you on how to migrate your existing PI/PO integration scenarios to SAP Integration Suite with the Migration Assessment and semi-automated Migration Tooling. Migration Assessment is a new capability within SAP Integration Suite which helps you estimating the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated. 
+
+After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Interface Migration Assessment App, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in SAP Cloud Integration will be automatically created based on SAP Process Orchestration information, so that ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as skeleton to migrate the content and create the final integration flows. Additional templates are already on the roadmap.
 
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees to Migration Assessment and Migration Tooling which are capabilities of SAP Integration Suite. This session will guide you on how to migrate your existing PI/PO integration scenarios to SAP Integration Suite with the Migration Assessment and semi-automated Migration Tooling.
+
+Migration Assessment is a new capability within SAP Integration Suite which helps you estimating the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated. 
+
+After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Interface Migration Assessment App, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in SAP Cloud Integration will be automatically created based on SAP Process Orchestration information, so that ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as skeleton to migrate the content and create the final integration flows. Additional templates are already on the roadmap.
 
 ## Requirements
 
