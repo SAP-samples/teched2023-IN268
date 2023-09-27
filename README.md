@@ -25,14 +25,14 @@ The requirements and the steps to be followed for this exercise are below. Pleas
 1. Download and intsall Insomnia. Please note that this is already done for the TechEd laptops.
 2. Connect PO to tenants using Cloud Connector
 3. On each tenant, provision Migration Assessment and Assign roles to  users
-4. Migration Assessment Capability
-5.     Setup destination to PO
-6.     Data Extraction Request
-7.     Evaluation Request
-8.     Generate and Analyse the Report
-9. Cloud Integration
-10.     Create Cloud Integration Package
-11.     Use the Migrate option to migrate scenarios
+4. Migration Assessment Capability:
+4.1 Setup destination to PO
+4.2 Data Extraction Request
+4.3 Evaluation Request
+4.5 Generate and Analyse the Report
+5 Cloud Integration
+5.1 Create Cloud Integration Package
+5.2 Use the Migrate option to migrate scenarios
 
 
 ## Exercises
