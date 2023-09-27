@@ -20,10 +20,20 @@ After having finished the assessment of the current SAP Process Orchestration la
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are:
+The requirements and the steps to be followed for this exercise are below. Please note that many of these are already done for TechEd. 
 
 1. Download and intsall Insomnia. Please note that this is already done for the TechEd laptops.
-2. 
+2. Connect PO to tenants using Cloud Connector
+3. On each tenant, provision Migration Assessment and Assign roles to  users
+4. Migration Assessment Capability
+5.     Setup destination to PO
+6.     Data Extraction Request
+7.     Evaluation Request
+8.     Generate and Analyse the Report
+9. Cloud Integration
+10.     Create Cloud Integration Package
+11.     Use the Migrate option to migrate scenarios
+
 
 ## Exercises
 
