@@ -12,10 +12,9 @@ After completing these steps you will be able to see the SAP Integration Suite l
    <br>![](/exercises/ex0/images/Login.png)
    
 3. In the SAP Integration Suite landing page, scroll down to Capabilities, and select Create Requests from the Assess Migration Scenarios tile.
-
-4. Navigate to Settings and Select J2EE System to view the details.
-   <br>![](/exercises/ex0/images/Access_Migration_Scenarios.png)
-
+4. 
+  <br>![](/exercises/ex0/images/Access_Migration_Scenarios.png)
+   
 ## Checkout Configuration for Process Orchestration System
 
 After completing these steps you will be able to test the connection to your Process Orchestration system. Additionally, we will also walk you through the steps on how to set up your own PO system. This will help you to do the setup on your own landscape.
