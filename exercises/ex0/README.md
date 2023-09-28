@@ -96,7 +96,7 @@ Note: You usually run a new evaluation request for a new data extraction whereas
    <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
    
 5. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
-   <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
+   <br>![](/exercises/ex0/images/Complete_Sce_Eval.png)
    
 ## View Generated Reports
 
@@ -113,17 +113,17 @@ Access and download analysis of your scenario evaluation runs with details speci
    
 4. Switch back to the list of Scenario Evaluation requests. From the Additional Options menu, you can select  Trigger Analysis to schedule a new evaluation run based on current data.
    <br>![](/exercises/ex0/images/Trigger_Analysis.png)
-    
-5. Furthermore, you have the option to  download details about the latest evaluation run either in an Excel format or as a pdf file.
+   
+6. Furthermore, you have the option to  download details about the latest evaluation run either in an Excel format or as a pdf file.
    <br>![](/exercises/ex0/images/Download_excel.png)
    
-6. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
+7. The option as .xlsx file lists all integration scenarios that were part of the request with migration effort and status as well as the rules applied to them.
    <br>![](/exercises/ex0/images/Excel.png)
 
-7. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.
+8. The option as .pdf file features the previously mentioned details about the integration scenarios while also providing a written summary of adapters and the assessment in general, with charts and tables as visual aids. It also maps the t-shirt effort estimation to effort estimation in person days based on project experience. This file is suited as a summarizing report, that can be used for example for management.
     <br>![](/exercises/ex0/images/pdf.png)
 
-## Summary- Congratulations on having Assessed your landscape now!
+## Summary- Congratulations on having Assessed your SAP Process Orchestration landscape!
 
 Once you have evaluated the migration possibility using the Migration Assessment capability of SAP Integration Suite, you are all set to migrate an integration artifact with the Migration tool.
 
