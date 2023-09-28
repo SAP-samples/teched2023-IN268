@@ -2,7 +2,7 @@
 
 In this exercise, you will learn how to migrate your existing integration scenarios to SAP Integration Suite with the Migration Assessment capability of SAP Integration Suite. This offering helps you estimate the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated.
 
-## Login to Integration Suite tenant
+## Login to SAP Integration Suite tenant
 
 After completing these steps you will be able to see the SAP Integration Suite landing page and view the Migration Assessment and Cloud Integration capabilities offered as part of the SAP Integration Suite
 
@@ -12,31 +12,30 @@ After completing these steps you will be able to see the SAP Integration Suite l
    <br>![](/exercises/ex0/images/Login.png)
    
 3. In the SAP Integration Suite landing page, scroll down to Capabilities, and select Create Requests from the Assess Migration Scenarios tile.
-4. 
   <br>![](/exercises/ex0/images/Access_Migration_Scenarios.png)
    
 ## Checkout Configuration for Process Orchestration System
 
-After completing these steps you will be able to test the connection to your Process Orchestration system. Additionally, we will also walk you through the steps on how to set up your own PO system. This will help you to do the setup on your own landscape.
+After completing these steps you will be able to test the connection to your SAP Process Orchestration system. Additionally, we will also walk you through the steps on how to set up your own PO system. This will help you to do the setup on your own landscape.
 
 Note: For this exercise, the connection to a cloud connector running on the CAL system has been established, the PO system is connected to the SAP Integration Suite tenant and you do not have Admin roles to add a new system.
 
 1. Navigate to Settings and Select J2EE System to view the details.
    <br>![](/exercises/ex0/images/View_PO_System.png)
    
-2. For this exercise, system setup is already done and you click on Test Connection to check the connection to PO system.
+2. For this exercise, the system setup is already done and you can click on Test Connection to check the connection to PO system.
    <br>![](/exercises/ex0/images/Test_PO_Con.png)
    
-3. In the Migration Assessment Application, the page now displays information about the Integration Directory and, optionally, the Enterprise Services Repository you connected to your previously created system.
+Note: In the Migration Assessment Application, the page now displays information about the Integration Directory and, optionally, the Enterprise Services Repository you connected to your previously created system.
 
-4. In the Migration Assessment Application, navigate to Configure > Rules.
+3. In the Migration Assessment Application, navigate to Configure > Rules.
    <br>![](/exercises/ex0/images/Configure_Rule.png)  
 
 Here you can find a list of rules predefined by SAP. Rules are a set of characteristics according to which the application evaluates whether an integration scenario can be migrated and what effort you can expect.
 
 Note: Currently, you can’t add custom rules or edit the standard rules. You can only view the standard rules.
 
-5. As an example, select the rule SenderAdapterType
+4. As an example, select the rule SenderAdapterType
    <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
    
 Here, you can see all the parameters of the rules, such as Rule Match Value, Assessment Category, and the Weight assigned to each rule match value. Based on these weights, the application calculates the estimated effort, which means that some parameters, and therefore rules, have a bigger influence on the final estimation than others.
@@ -62,10 +61,10 @@ A recommendation from our side would be to reuse the already created Data Extrac
 1.	In the Migration Assessment Application, navigate to Request Data Extraction.
    <br>![](/exercises/ex0/images/Request_Data_Ext.png)
   	
-2. We recommend you reuse the already existing request as creating a new one would take a few minutes.
+2. We recommend you reuse the already existing request as creating a new one would take a few minutes. Click on Create
    <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
    
-3. (Optional) If you like to create a new request, select  Create, then enter a Request Name (append with your unique identifier maybe DemoXX where XX is your user from 00 to 99), and select the System you want to connect to (in our case it is J2EE from the drop-down).
+3. Enter a Request Name (append with your unique identifier maybe DemoXX where XX is your user from 00 to 99), and select the System you want to connect to (in our case it is J2EE from the drop-down). Click on Create.
    <br>![](/exercises/ex0/images/New_Data_Ext.png)
    
 4. The data extraction starts. It should show the status In Process. From time to time, you can refresh to check if the request has been completed.
@@ -82,18 +81,21 @@ A recommendation from our side would be to reuse the already created Data Extrac
 Assess your integration scenarios using the information from the data extraction requests. The prerequisite is that you have at least one data extraction request in status Completed.
 <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
 
-1. In the Migration Assessment application, navigate to  Request  Scenario Evaluation, and select  Create
-   <br>![](/exercises/ex0/images/New_Data_Ext.png)
+1. In the Migration Assessment application, navigate to  Request  Scenario Evaluation.
+   <br>![](/exercises/ex0/images/Request_Scenario_Eval.png)
    
-2. Enter a Request Name as DemoXX (where XX is your user from 00 to 99)and choose a Data Extraction Request from the drop-down or the one you executed previously. For this specific run of your scenario evaluation, enter an Evaluation Run Name as DemoXX (where XX is your user from 00 to 99)and a Description.
+2. Select  Create
+   <br>![](/exercises/ex0/images/Select_Create.png)
+   
+3. Enter a Request Name as DemoXX (where XX is your user from 00 to 99)and choose a Data Extraction Request from the drop-down or the one you executed previously. For this specific run of your scenario evaluation, enter an Evaluation Run Name as DemoXX (where XX is your user from 00 to 99)and a Description.
   <br>![](/exercises/ex0/images/Create_Sce_Eval.png)
 
 Note: You usually run a new evaluation request for a new data extraction whereas you run a new evaluation run whenever the assessment rules have been changed.
 
-3. The new request appears in the list of scenario evaluation requests in Status In Progress.
+4. The new request appears in the list of scenario evaluation requests in Status In Progress.
    <br>![](/exercises/ex0/images/Extraction_In_Progress.png)
    
-4. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
+5. Refresh and wait until the request changes to status Completed. Different Actions can be performed for a scenario evaluation request.
    <br>![](/exercises/ex0/images/Complete_Data_Ext.png)
    
 ## View Generated Reports
