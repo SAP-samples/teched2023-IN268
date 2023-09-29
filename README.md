@@ -22,7 +22,7 @@ After having finished the assessment of the current SAP Process Orchestration la
 
 The requirements and the steps to be followed for this exercise are below. Please note that many of these are already done for TechEd as highlighted in bold. 
 
-1. ## Download and intsall Insomnia. Please note that this is already done for the TechEd laptops.
+1. <B>Download and intsall Insomnia. Please note that this is already done for the TechEd laptops.</>
 2. ## Connect PO to tenants using Cloud Connector
 3. ## On each tenant, provision Migration Assessment and Cloud Integration
 4. ## Assign appropriate roles to the users
