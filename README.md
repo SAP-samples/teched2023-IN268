@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called IN268 - Start with the Right Mind-Set and Learn How to Modernize Your Integration.  
+This repository contains the material for the SAP TechEd 2023 session called <b>IN268 - Start with the Right Mind-Set and Learn How to Modernize Your Integration</b>.  
 
 This session will guide you on how to migrate your existing PI/PO integration scenarios to SAP Integration Suite with the Migration Assessment and semi-automated Migration Tooling. Migration Assessment is a new capability within SAP Integration Suite which helps you estimating the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated. 
 
@@ -57,9 +57,12 @@ Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribut
 -->
 
 ## Code of Conduct
-1. Please work in your own package
-2. Do not delete any other packages
-3. 
+1. Use the tenant that we provide only for this exercise, and not for anything else. For further exploration of Migration Assessment and Cloud Integration, use a free BTP trial account or a Free Tier tenant.
+2. Do not share any private or personal information such as your name, email address or affiliation.
+3. Please strictly follow the instructions, regarding the naming conventions you will use to name the artifacts you will create. This ensures that you will be able to successfully complete the tasks, without clashing with other participants.
+4. Other artifacts, created by other participants, will appear in your shared account. Do not access or delete these artifacts. Please respect the rules and allow others to have the same learnings as you.
+5. We have done everything to make this experience enjoyable. Your TechEd tenants were pre-configured by a competent technical BTP administrator, and you already have all the roles and definitions you need to complete the exercises.
+
 Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## How to obtain support
