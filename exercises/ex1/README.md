@@ -1,4 +1,4 @@
-# Exercise 1 Migration Tool
+# Exercise 2 - Migrate and Test SOAP to SOAP Scenario
 
 After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Migration Assessment capability, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in Cloud Integration will be automatically created so ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as a skeleton to migrate the content and create the final integration flows.
 
@@ -87,5 +87,5 @@ After completing these steps you will be able to test the interface and get the 
 ## Summary - Congratulations You have successfully tested your scenario now.
 Exercise 2 is an optional exercise, if time permits you can continue with it.
 
-Continue to - [Exercise 2 - Create Employee Scenario (SOAP to REST)](../ex2/README.md)
+Continue to - [Exercise 3 - Migrate and Test SOAP to REST Scenario)](../ex2/README.md)
 
