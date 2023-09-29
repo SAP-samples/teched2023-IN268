@@ -1,4 +1,4 @@
-# Exercise 2 - Create Employee Scenario (SOAP to REST)
+# Exercise 3 - Migrate and Test SOAP to REST Scenario
 
 In this exercise, we will create migrate a SOAP to REST scenario. 9.	For this particular scenario, not all attributes of the ICO on SAP Process Orchestration could be mapped to the parameters in the integration flow on Cloud Integration, so a couple of manual adjustments will need to be carried out which we will do as a part of the exercise.
 
