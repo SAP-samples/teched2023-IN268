@@ -38,32 +38,31 @@ The requirements and the steps to be followed for this exercise are below. Pleas
 
 <!-- Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example. -->
 
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Create Employee Scenario (SOAP to REST)](exercises/ex2/)
-  <!--
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
--->
+- [Exercise 1 - Migration Asse3ssment](exercises/ex0/)
+- [Exercise 2 - Migrate and Test SOAP to SOAP Scenario](exercises/ex1/)
+- [Exercise 3 - Migrate and Test SOAP to REST Scenario](exercises/ex2/)
   
-**OR** Link to the Tutorial Navigator for example...
-
+<!-- **OR** Link to the Tutorial Navigator for example... 
 Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
+-->
 
+<!--
 **IMPORTANT**
-
 Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
+-->
 
+<!--
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
+-->
 
 ## Code of Conduct
+1. Please work in your own package
+2. Do not delete any other packages
+3. 
 Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## How to obtain support
-
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
 ## License
