@@ -1,4 +1,4 @@
-# Migration Assessment
+# Exercise 1 - Migration Assessment
 
 In this exercise, you will learn how to migrate your existing integration scenarios to SAP Integration Suite with the Migration Assessment capability of SAP Integration Suite. This offering helps you estimate the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated.
 
