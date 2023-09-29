@@ -38,7 +38,7 @@ The requirements and the steps to be followed for this exercise are below. Pleas
 
 <!-- Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example. -->
 
-- [Exercise 1 - Migration Asse3ssment](exercises/ex0/)
+- [Exercise 1 - Migration Assessment](exercises/ex0/)
 - [Exercise 2 - Migrate and Test SOAP to SOAP Scenario](exercises/ex1/)
 - [Exercise 3 - Migrate and Test SOAP to REST Scenario](exercises/ex2/)
   
