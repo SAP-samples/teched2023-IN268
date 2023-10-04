@@ -8,7 +8,7 @@ After completing these steps you will be able to see the SAP Integration Suite l
 
 1. Click on the link https://teched23blr07.integrationsuite.cfapps.ap10.hana.ondemand.com/shell/home
    
-2. Enter User as userXX (where XX is from 00 to 99) and Password as Welcome1 and Click on Log On.
+2. Enter <b>User</b> as userXX (where XX is from 00 to 99) and Password as Welcome1 and Click on Log On.
    <br>![](/exercises/ex0/images/Login.png)
    
 3. In the SAP Integration Suite landing page, scroll down to Capabilities, and select <b>Create Requests</b> from the <b>Assess Migration Scenarios</b> tile.
