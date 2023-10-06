@@ -7,7 +7,7 @@
 
 This repository contains the material for the SAP TechEd 2023 session called <b>IN268 - Start with the Right Mind-Set and Learn How to Modernize Your Integration</b>.  
 
-This session will guide you on how to migrate your existing Process Integration and Process Orchestration (PI/PO) scenarios to SAP Integration Suite with the Migration Assessment and semi-automated Migration Tooling. Migration Assessment is a new capability within SAP Integration Suite which helps you estimating the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated. 
+This session will guide you on how to migrate your existing SAP Process Integration and SAP Process Orchestration (PI/PO) scenarios to SAP Integration Suite with the Migration Assessment and semi-automated Migration Tooling. Migration Assessment is a new capability within SAP Integration Suite which helps you estimating the technical efforts involved in the migration process and evaluates how various integration scenarios might be migrated. 
 
 After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Interface Migration Assessment capability, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in SAP Cloud Integration will be automatically created based on SAP Process Orchestration information, so that ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as skeleton to migrate the content and create the final integration flows. Additional templates are already on the roadmap.
 -->
@@ -22,15 +22,15 @@ After having finished the assessment of the current SAP Process Orchestration la
 
 ## Requirements
 
-The requirements and the steps to be followed for this exercise are below. Please note that many of these are already done for TechEd and we will concentrate on othes highlighted in bold. 
+The requirements and the steps to be followed for this exercise are listed below. Please note, that the first five steps have been already done for TechEd, they are listed here for your information just in case that you like to run through the exercise on your own environment. For TechEd, we will concentrate on the other steps highlighted in bold. 
 
-1. Download and intsall Insomnia. Please note that this is already done for the TechEd laptops.
+1. Download and install Insomnia. Please note that this is already done for the TechEd laptops.
 2. Connect PO to tenants using Cloud Connector
 3. On each tenant, provision Migration Assessment and Cloud Integration
 4. Assign appropriate roles to the users
 5. Setup destination to PO
-5. <B>Data Extraction Request</B>
-6. <B>Data Evaluation Request</B>
+5. <B>Run Data Extraction Request</B>
+6. <B>Run Data Evaluation Request</B>
 7. <B>Generate and Analyse the Report</B>
 8. <B>Create Cloud Integration Package</B>
 9. <B>Use the Migrate option to migrate scenarios</B>
