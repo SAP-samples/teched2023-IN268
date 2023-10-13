@@ -20,7 +20,7 @@ After completing these steps you will be able to test the connection to your SAP
 
 <b>Note:</b> For this exercise, the connection to a cloud connector has been established, the PO system is connected to the SAP Integration Suite tenant and you do not have Admin roles to add a new system.
 
-1. Navigate to <b>Settings</b> and Select <b>J2EE</b> System to view the details.
+1. Navigate to <b>Settings</b> and Select <b>J2E</b> System to view the details.
    <br>![](/exercises/ex0/images/View_PO_System.png)
    
 2. For this exercise, the system setup is already done and you can click on <b>Test Connection</b> to check the connection to PO system.
@@ -38,6 +38,9 @@ Here you can find a list of rules predefined by SAP. Rules are a set of characte
 4. As an example, select the rule <b>SenderAdapterType</b>
    <br>![](/exercises/ex0/images/Select_Sender_Adapter_Type.png)
    
+5. Open the variant <b>MAIN_SenderAdapterType</b>
+![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/c4b005cb-e7bb-4542-8bef-61c81a566ee0)
+
 Here, you can see all the parameters of the rules, such as Rule Match Value, Assessment Category, and the Weight assigned to each rule match value. Based on these weights, the application calculates the estimated effort, which means that some parameters, and therefore rules, have a bigger influence on the final estimation than others.
 
 ## Optional - Walkthrough of adding a Process Orchestration System
@@ -61,10 +64,10 @@ A recommendation from our side would be to reuse the already created Data Extrac
 1.	In the Migration Assessment Application, navigate to <b>Request Data Extraction</b>.
    <br>![](/exercises/ex0/images/Request_Data_Ext.png)
   	
-2. We recommend you reuse the already existing request as creating a new one would take a few minutes. Click on <b>Create</b>
+2. We recommend you reuse the already existing request as creating a new one would take a few minutes. If you want to create a new request, Click on <b>Create</b>. Otherwise, you can continue with [Create a Scenario Evaluation Request](#create-a-scenario-evaluation-request).
    <br>![](/exercises/ex0/images/Ruse_Data_Ext.png)
    
-3. Enter a Request Name (append with your unique identifier maybe DemoXX where XX is your user from 00 to 99), and select the System you want to connect to (in our case it is J2EE from the drop-down). Click on <b>Create</b>.
+3. Enter a Request Name (append with your unique identifier maybe DemoXX where XX is your user from 00 to 99), and select the System you want to connect to (in our case it is J2E from the drop-down). Click on <b>Create</b>.
    <br>![](/exercises/ex0/images/New_Data_Ext.png)
    
 4. The data extraction starts. It should show the status <b>In Process</b>. From time to time, you can refresh to check if the request has been completed.
@@ -111,7 +114,7 @@ Access and download analysis of your scenario evaluation runs with details speci
 3. Switch to the <b>Integration Scenarios</b> tab, and you see the list of all integration scenarios including effort size and assessment category.
    <br>![](/exercises/ex0/images/Dashboard.png)
    
-4. Switch back to the list of <b>Scenario Evaluation</b> requests. From the Additional Options menu, you can select <b>Trigger Analysis</b> to schedule a new evaluation run based on current data.
+4. Switch back to the list of <b>Scenario Evaluation</b> requests. From the Additional Options menu, you can select <b>Trigger Analysis</b> to schedule a new evaluation run based on the most recent data extraction. Let's skip this for now as data did not change.
    <br>![](/exercises/ex0/images/Trigger_Analysis.png)
    
 6. Furthermore, you have the option to  download details about the latest evaluation run either in an Excel format or as a PDF file.
