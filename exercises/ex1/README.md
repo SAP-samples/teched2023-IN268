@@ -85,7 +85,6 @@ After completing these steps you will be able to test the interface and get the 
   <br>![](/exercises/ex1/images/Insom_200_OK.png)
 
 ## Summary - Congratulations You have successfully tested your scenario now.
-Exercise 3 is an optional exercise, if time permits you can continue with it.
 
 Continue to - [Exercise 3 - Migrate and Test SOAP to REST Scenario](../ex2/README.md)
 
