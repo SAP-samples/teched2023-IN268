@@ -20,7 +20,7 @@ In this exercise, we will create migrate a SOAP to REST scenario. 9.	For this pa
 6.	Maintain a Name for your integration flow, e.g., following the pattern soap_to_rest_sync_\<user<b>xx</b>\> where <b>xx</b> is your user number from 00 to 99. Then, click on <b>Review</b>.
 <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/d2dc66bd-62bd-40ef-aad9-5685d20b9fef)
 
-7.	Verify the information and click on <b>Migrate<b>.
+7.	Verify the information and click on <b>Migrate</b>.
 <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/82e82c77-21ac-49de-a29e-fca919d8efc0)
 
 8.	Again, the integration flow will be generated within your integration package. As you can see from the summary page, the REST receiver adapter on SAP Process Orchestration has been mapped to the HTTP adapter in Cloud Integration. Click on  View Artifact to take a closer look. 
