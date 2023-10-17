@@ -130,4 +130,4 @@ Access and download analysis of your scenario evaluation runs with details speci
 
 Once you have evaluated the migration possibility using the Migration Assessment capability of SAP Integration Suite, you are all set to migrate an integration artifact with the Migration tool.
 
-Continue to - [Exercise 2 - Migrate and Test SOAP to SOAP Scenario](../ex1/README.md)
+Continue to - [Exercise 2 - Migrate and Test SOAP to SOAP Scenario](../ex2/README.md)
