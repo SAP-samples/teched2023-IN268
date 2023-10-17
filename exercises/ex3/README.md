@@ -29,19 +29,19 @@ In this exercise, we will create migrate a SOAP to REST scenario. 9.	For this pa
 9.	For this particular scenario, not all attributes of the ICO on SAP Process Orchestration could be mapped to the parameters in the integration flow on Cloud Integration, so a couple of manual adjustments need to be carried out.<br>
 Note, the attribute mapping will be improved with future increments of the migration tool so that manual interaction is reduced to a bare minimum.<br>
 Click on <b>Configure</b>
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/adf766e5-39a7-4a6a-a0cd-a087c0660efa)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/adf766e5-39a7-4a6a-a0cd-a087c0660efa)
 
-10. Switch to tab <b>More</b> and select <b>"XML to JSON Converter as Type</b>.
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/abd693af-a220-481c-95d2-8ce6fa32e1bd)
+10. Switch to tab <b>More</b> and select <b>"XML to JSON Converter" as Type</b>.
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/abd693af-a220-481c-95d2-8ce6fa32e1bd)
 
 11. <b>Enable "Suppress JSON Root Element"</b> and press <b>Save</b>.
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/b1c96604-44a0-4d69-84b7-e1c70958fa75)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/b1c96604-44a0-4d69-84b7-e1c70958fa75)
 
 12. Press <b>Close</b> to close the Message box and <b>close</b> the configure Pop-Up as well.
-    ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/64e0f7f8-5f13-4669-b06b-d8974c76e9a5)
+  <br>  ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/64e0f7f8-5f13-4669-b06b-d8974c76e9a5)
 
 13. Switch to <b>Edit</b> mode at the top right corner
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/59e162de-fc10-4702-9bd4-4429cfc351bc)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/59e162de-fc10-4702-9bd4-4429cfc351bc)
 
 14. Add the <b>Namespace Mapping “xmlns:ns0=http://pi-elevation.bootcamp.com”</b> in the <b>Runtime Configuration</b> of the integration flow.
 <br>![](/exercises/ex3/images/5.0_View_iFlow_Changes_to_Make.png)
@@ -53,25 +53,25 @@ Click on <b>Configure</b>
 <br>![](/exercises/ex3/images/5.3_Edit_iFlow_JSON_to_XML.png)
 
 17.	Press <b>Save</b> and then <b>Deploy</b> to deploy the integration flow.
-    ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/3d598e71-4e98-4c94-b574-2fd370357fb0)
+  <br>  ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/3d598e71-4e98-4c94-b574-2fd370357fb0)
 
 18. You can check the deployment status via the monitor dashboard. Navigate to <b>Monitor > Integrations</b>, and select the <b>Manage Integration Content</b> tile.
-    ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/4e02fbcd-7789-4c8d-83b5-a1994deaca73)
+ <br>   ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/4e02fbcd-7789-4c8d-83b5-a1994deaca73)
    
 19. Your integration flow should be in status <b>Started</b>. From here, you get the endpoint that you need to call to test the scenario. <b>Copy the endpoint</b> as we will use it in the next step.
-    <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/defda659-1542-4cdd-99f4-7732d0cd7742)
+   <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/defda659-1542-4cdd-99f4-7732d0cd7742)
 
 
 ## Verify the Interface via Insomnia
 
-1.	Open Insomnia and <b>duplicate</b> the Request you created in exercise 2.
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/f38c37a9-ebe7-4891-bc99-3d633841d5b3)
+1.	Open Insomnia and <b>duplicate</b> the Request you created in exercise 2. 
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/f38c37a9-ebe7-4891-bc99-3d633841d5b3)
 
-2. As name provide "Employee" and press <b>Create</b>
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/fe96cd82-3a74-4467-bd4b-35c14056847a)
+2. As name provide "Employee" and press <b>Create</b>.
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/fe96cd82-3a74-4467-bd4b-35c14056847a)
 
 3. <b>Replace the URL</b> with the endpoint of your new integration flow.
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/d5cf1d5b-9c2a-4a99-a152-3eee38c9312a)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/d5cf1d5b-9c2a-4a99-a152-3eee38c9312a)
 
 4. Replace the XML Payload to following value:
   ```xml
@@ -89,10 +89,10 @@ Click on <b>Configure</b>
     </soapenv:Body>
 </soapenv:Envelope>
 ```
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/3d105a27-cc64-4f0a-ab41-add7b5c42905)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/3d105a27-cc64-4f0a-ab41-add7b5c42905)
 
 5. Press <b>Send</b>. Response should be "200 OK".
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/1b44d138-5470-4f86-876f-d67a152d824e)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/1b44d138-5470-4f86-876f-d67a152d824e)
 
 
 
