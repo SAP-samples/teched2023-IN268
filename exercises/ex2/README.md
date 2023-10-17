@@ -86,5 +86,5 @@ After completing these steps you will be able to test the interface and get the 
 
 ## Summary - Congratulations You have successfully tested your scenario now.
 
-Continue to - [Exercise 3 - Migrate and Test SOAP to REST Scenario](../ex2/README.md)
+Continue to - [Exercise 3 - Migrate and Test SOAP to REST Scenario](../ex3/README.md)
 
