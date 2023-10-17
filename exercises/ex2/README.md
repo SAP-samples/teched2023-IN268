@@ -106,8 +106,8 @@ After completing these steps you will be able to test the interface and get the 
 8. Provide following credentials:<br>
 <b>Username</b>: sb-0f0c8c67-655f-4cf4-beff-98b7fdbdaecc!b3814|it-rt-teched23blr11!b68<br>
 <b>Password</b>: 5abe805e-e0e6-42a0-864c-bc8bbba360b5$rFhomkIHs7BNnWic5VWMAz1asCp5uR5LRIX0Z62n7lw=
-<br>
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/8f428481-b4c5-41ba-a6d7-756c280561ff)
+<br> ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/24e94326-0394-41c8-b8df-2cbb0e88da58)
+
 
 
 10. Press <b>Send</b>. The request should return HTTP code 200 and a response with the converted text.
