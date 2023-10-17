@@ -1,95 +1,90 @@
-# Exercise 3 - Migrate and Test SOAP to REST Scenario
+# Exercise 2 - Migrate and Test SOAP to SOAP Scenario
 
-In this exercise, we will create migrate a SOAP to REST scenario. 9.	For this particular scenario, not all attributes of the ICO on SAP Process Orchestration could be mapped to the parameters in the integration flow on Cloud Integration, so a couple of manual adjustments will need to be carried out which we will do as a part of the exercise.
+After having finished the assessment of the current SAP Process Orchestration landscape and having estimated the effort needed to migrate with the Migration Assessment capability, the next step is the actual migration. The goal of the Migration Tool is to provide a semi-automated migration where interfaces in Cloud Integration will be automatically created so ideally 60-70% of technical migration efforts are automated. The migration of scenarios is based on a template approach, which means that integration flow templates are used as a skeleton to migrate the content and create the final integration flows.
 
-1. Open your previously created package, and switch to the Artifacts tab, then switch to Edit Mode.
-<br>![](/exercises/ex2/images/1.OpenPreviousPackage.png)
+## Create a Cloud Integration package
 
-2. Click on  Migrate to start the migration wizard.
-<br>![](/exercises/ex2/images/2.0_ClickOnMigrate.png)
+ As a prerequisite, you first need to create an integration package where the automatically generated integration flows are created and 
+ then we will migrate SOAP to SOAP interface.
 
-3.	Configure the SAP Process Orchestration system as before. For this expand the  Name section and choose your system. Click  Connect. Lastly, click  Next Step to proceed with configuring the scenario.
-<br>![](/exercises/ex2/images/3.0_Migrate_SelectPO_System.png)
+1. Switch back to the SAP Integration Suite landing page.
+  <br>![](/exercises/ex2/images/Navigate_Back.png)
 
-4.	Click on  Show Filters and fill in “http://pi-elevation.bootcamp.com“ for Namespace. Choose the interface “SI_Employee_Out” from the drop-down list. Click  Next Step.
-<br>![](/exercises/ex2/images/3.1_Migrate_SelectPO_Artifacts.png)
+3. Navigate to  <b>Design > Integrations</b>, and select  <b>Create</b>.
+   <br>![](/exercises/ex2/images/Create_Pack.png)
+   
+5. Fill in the <b>Name</b>, e.g. Demo_<userxx> where xx is your user number from 00 to 99, and a short <b>description</b> eg <Migrate SOAP to SOAP artifact>. Then click <b>Save</b>.
+    <br>![](/exercises/ex2/images/Save_Pack.png)
+   
+## Migrate SAP Process Orchestration Artifacts (SOAP to SOAP scenario)
 
-5.	The template “P2P_SYNC_JSON_REC_0001” should already be selected. Click  Next Step. 
-<br>![](/exercises/ex2/images/3.2_Migrate_SelectPO_Template.png)
+Every ICO that can be migrated has an associated template in the migration tooling. It's based on these templates, the migration tooling creates equivalent integration flows in the SAP Integration Suite. Let's start with the actual migration.
 
-6.	Maintain a Name for your integration flow, e.g., following the pattern soap_to_rest_sync_<your initials or name>. The, click on  Review.
-<br>![](/exercises/ex2/images/3.3_Migrate_IntegrationFlow_Name.png)
+1. In the package you just created, you should be already in Edit mode. If not, on the top right click <b>Edit</b>.
+   <br>![](/exercises/ex2/images/Migrate.png)
+   
+3. Click on  <b>Migrate</b> to start the migration wizard.
+   <br>![](/exercises/ex2/images/Migrate.png)
+   
+5. <b>Select the SAP Process Orchestration system</b> for which the assessment was previously done. For this, expand the Name section and select your system from the drop-down menu. Click <b>Next Step</b> to proceed with configuring the scenario.
+    <br>![](/exercises/ex2/images/PO_sys.png)
+   
+7. Currently, only Integrated Configuration Objects (ICO) are supported. You can use the filter to filter out the list of ICOs and choose the appropriate scenario.  Click on <b>Show Filters</b> and fill in “http://pi-elevation.bootcamp.com“ as <b>Namespace</b>. Choose the <b>interface “SI_NumberConversion_Out”</b> from the drop-down list. Click <b>Next Step</b>.
+   <br>![](/exercises/ex2/images/Namespace_Next.png)
+   
+9. The best-fit template is identified by the migration framework and will be automatically filled in for you. In this case, it will be “P2P_SYNC_0001”. Click <b>Next Step</b>.
+    <br>![](/exercises/ex2/images/Template.png)
+   
+11. Maintain any Name for your integration flow, e.g. following the pattern: soap_to_soap_sync_<your userxx> where xx is your user from 00 to 99. Note, that the ID of your integration flow needs to be unique across all integration flows on the tenant. Click on <b>Review</b>.
+    <br>![](/exercises/ex2/images/Int_Name_Review.png)
+    
+13. Verify the information and then click on <b>Migrate</b>.
+    <br>![](/exercises/ex2/images/Final_Migrate.png)
+    
+15. A new integration flow has been generated within your package. Click on the artifact to take a closer look at each individual step. The required information is automatically populated such as the connection information. You can close this window.
+    <br>![](/exercises/ex2/images/Close_Artifact.png)
 
-7.	Verify the information and click on  Migrate.
-<br>![](/exercises/ex2/images/3.4_Migrate_Review.png)
+## Deploy migrated artifacts
 
-8.	Again, the integration flow will be generated within your integration package. As you can see from the summary page, the REST receiver adapter on SAP Process Orchestration has been mapped to the HTTP adapter in Cloud Integration. Click on  View Artifact to take a closer look. 
-<br>![](/exercises/ex2/images/4.0_Migration_Success.png)
+After completing these steps you will be able to deploy the Integration flow and monitor your scenario
+    
+1.  Click on the <b>SOAP Adapter</b> and view the <b>Connection</b> details. You can see that the endpoint address has been automatically set based on the integration flow name that you have entered.
+    <br>![](/exercises/ex2/images/Open_Iflow.png)
+    
+2. For this particular scenario, no manual steps need to be carried out. It should run as is. Select <b>Deploy</b> to get the integration flow deployed on the tenant runtime.
+    <br>![](/exercises/ex2/images/Deploy_Con.png)
+   
+3. You can check the deployment status via the monitor dashboard. Navigate to <b>Monitor > Integrations</b>, and select the <b>Manage Integration Content</b> tile.
+    <br>![](/exercises/ex2/images/Monitor_Int.png)
+   
+4. Your integration flow should be in status <b>Started</b>. From here, you get the endpoint that you need to call to test the scenario. <b>Copy the endpoint</b> as we will use it in the next step.
+    <br>![](/exercises/ex2/images/Copy_endpoint.png)
+   
+Now you are all set to test your scenario!
 
-9.	For this particular scenario, not all attributes of the ICO on SAP Process Orchestration could be mapped to the parameters in the integration flow on Cloud Integration, so a couple of manual adjustments need to be carried out. Note, the attribute mapping will be improved with future increments of the migration tool so that manual interaction is reduced to a bare minimum. In the integration flow, switch to  Edit mode at the top right corner, and add the Namespace Mapping “xmlns:ns0=http://pi-elevation.bootcamp.com” in the Runtime Configuration of the integration flow.
-<br>![](/exercises/ex2/images/5.0_View_iFlow_Changes_to_Make.png)
+## Verify the Interface via Insomnia
 
+After completing these steps you will be able to test the interface and get the desired result of converting a number into a text.
 
-10. Next, click on the  XML to JSON Converter and switch to the  Processing details. Select the  Suppress JSON Root Element.
-<br>![](/exercises/ex2/images/5.1_Edit_iFlow_XML_to_JSON.png)
+1. Open  Insomnia and click on <b>Import</b>.
+   <br>![](/exercises/ex2/images/Insom_Import.png)
+   
+2. <b>Drag and drop</b> the PI Elevation_Demo.json file  from your system to Insomnia UI and click on <b>Scan</b>
+   <br>![](/exercises/ex2/images/Insom_Scan.png)
 
-11.	In the HTTP connection of the “Request Reply”, verify that the Authentication is set to “Basic”. The credential name is automatically mapped from the REST receiver adapter on SAP Process Orchestration. This needs to be changed to the credential name maintained on the tenant, here maintain the Credential Name “PIMAS_Demo”.
-<br>![](/exercises/ex2/images/5.2_Edit_iFlow_Request_Reply.png)
+3. Click on <b>Import</b>.
+    <br>![](/exercises/ex2/images/Insom_ImportClick.png)
+   
+4. <b>Expand PI Elevation_Demo collection</b> and you should be able to see 3 requests
+   <br>![](/exercises/ex2/images/Insom_3Req.png)
+   
+5. From the collection “PI Elevation_Demo” open the “Number Conversion Request”, and <b>update the URL</b> so that it fits the end point of your integration flow, under <b>authentication</b> fill in the <b>Process Integration Client ID</b> (obtained from the tenant booker app )for username and <b>Process Integration Client Secret</b> (obtained from tenant booker app) for password and click on <b>Send</b>.
+   <br>![](/exercises/ex2/images/Insoma_Final_Test.png)
+   
+6. The request should return HTTP code 200 and a response with the converted text.
+  <br>![](/exercises/ex2/images/Insom_200_OK.png)
 
-12.	Next, click on the  JSON to XML Converter and switch to the  Processing details. Enter “MT_Employee_RESP” as Name and select the namespace you created earlier.
-<br>![](/exercises/ex2/images/5.3_Edit_iFlow_JSON_to_XML.png)
+## Summary - Congratulations You have successfully tested your scenario now.
 
-13.	Select  Save.
+Continue to - [Exercise 3 - Migrate and Test SOAP to REST Scenario](../ex2/README.md)
 
-14.	If you like to test the scenario, select  Deploy .Otherwise, you can proceed to the next scenario.
-<br>![](/exercises/ex2/images/5.3_Edit_iFlow_Deploy.png)
-
-15.	You can check whether your integration flow has been successfully deployed via the monitor dashboard.
-<br>![](/exercises/ex2/images/6.0_iFlow_Manage_Integration_Content.png)
-
-16.	Verify your interface with Insomia. In the Postman collection “Migration Exercise” open the “Exercise_2_Employee_Out”, update the URL so that it fits to the end point of your integration flow, and click on Send. The request should return HTTP code 200 and a response with the information that the employee has been created with success.
-<br>![](/exercises/ex2/images/7.0_Insomia_Check.png)
-
-
-
-<!--
-## Exercise 2.1 Sub Exercise 1 Description 
-
-After completing these steps you will have migrated a SOAP to REST scenario and made the manual adjustements needed for the scenario to deploy successfully.
-
-1. 1.	Open your previously created package, and switch to the Artifacts tab, then switch to  Edit Mode.
-<br>![](/exercises/ex2/images/02_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
-
-## Exercise 2.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
-
--->
-
-## Congratulations
-
-You've now successfully completed migration assessment and migrated scnearios from PI/PO to SAP Integration Suite using the migration tooling functionality.
-
-<!--
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
--->

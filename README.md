@@ -49,9 +49,9 @@ Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples
 
 <!-- Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example. -->
 
-- [Exercise 1 - Migration Assessment](exercises/ex0/)
-- [Exercise 2 - Migrate and Test SOAP to SOAP Scenario](exercises/ex1/)
-- [Exercise 3 - Migrate and Test SOAP to REST Scenario](exercises/ex2/)
+- [Exercise 1 - Migration Assessment](exercises/ex1/)
+- [Exercise 2 - Migrate and Test SOAP to SOAP Scenario](exercises/ex2/)
+- [Exercise 3 - Migrate and Test SOAP to REST Scenario](exercises/ex3/)
   
 <!-- **OR** Link to the Tutorial Navigator for example... 
 Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
