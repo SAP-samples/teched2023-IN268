@@ -13,7 +13,7 @@ After having finished the assessment of the current SAP Process Orchestration la
 3. Navigate to  <b>Design > Integrations</b>, and select  <b>Create</b>.
    <br>![](/exercises/ex2/images/Create_Pack.png)
    
-5. Fill in the <b>Name</b>, e.g. Demo_<userxx> where xx is your user number from 00 to 99, and a short <b>description</b> eg <Migrate SOAP to SOAP artifact>. Then click <b>Save</b>.
+5. Fill in the <b>Name</b>, e.g. Demo_\<user<b>xx</b>\> where <b>xx</b> is your user number from 00 to 99, and a short <b>description</b> eg <Migrate SOAP to SOAP artifact>. Then click <b>Save</b>.
     <br>![](/exercises/ex2/images/Save_Pack.png)
    
 ## Migrate SAP Process Orchestration Artifacts (SOAP to SOAP scenario)
@@ -37,7 +37,7 @@ Every ICO that can be migrated has an associated template in the migration tooli
 9. The best-fit template is identified by the migration framework and will be automatically filled in for you. In this case, it will be “P2P_SYNC_0001”. Click <b>Next Step</b>.
     <br>![](/exercises/ex2/images/Template.png)
    
-11. Maintain any Name for your integration flow, e.g. following the pattern: soap_to_soap_sync_<your userxx> where xx is your user from 00 to 99. Note, that the ID of your integration flow needs to be unique across all integration flows on the tenant. Click on <b>Review</b>.
+11. Maintain any Name for your integration flow, e.g. following the pattern: soap_to_soap_sync_\<user<b>xx</b>\> where <b>xx</b> is your user from 00 to 99. Note, that the ID of your integration flow needs to be unique across all integration flows on the tenant. Click on <b>Review</b>.
     <br>![](/exercises/ex2/images/Int_Name_Review.png)
     
 13. Verify the information and then click on <b>Migrate</b>.
