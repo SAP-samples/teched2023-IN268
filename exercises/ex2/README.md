@@ -44,7 +44,7 @@ Every ICO that can be migrated has an associated template in the migration tooli
     <br>![](/exercises/ex2/images/Final_Migrate.png)
     
 15. A new integration flow has been generated within your package. Click on the artifact to take a closer look at each individual step. The required information is automatically populated such as the connection information. Click on <b>View Artifact</b>.
-    ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/afce1689-5586-4813-a77f-7db9f3bdef2e)
+   <br> ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/afce1689-5586-4813-a77f-7db9f3bdef2e)
 
 
 ## Deploy migrated artifacts
@@ -73,16 +73,16 @@ After completing these steps you will be able to test the interface and get the 
 <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/5cc2dff9-b872-4746-8e62-234961db2a6b)
 
 2. Create a <b>New HTTP-Request</b>.
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/9972321f-adb2-4637-a55d-81d36f1754ea)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/9972321f-adb2-4637-a55d-81d36f1754ea)
 
 3. <b>Change the Request Method from GET to POST</b>, by clicking the dropdown icon next to GET.
-   ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/5741a591-a781-4cf0-b74d-ddb644434ef4)
+ <br>  ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/5741a591-a781-4cf0-b74d-ddb644434ef4)
 
 4. <b>Paste the endpoint</b> from you integration flow as URL.
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0f81d52f-f8f7-4709-b97b-fac0c24ad4cc)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0f81d52f-f8f7-4709-b97b-fac0c24ad4cc)
 
 5. Add a <b>Body</b> of type XML.<br>
-   ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/d0a2c83c-8313-443d-bcea-e841f11b0cdb)
+ <br>  ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/d0a2c83c-8313-443d-bcea-e841f11b0cdb)
 
 6. Provide following payload:
   ```xml
@@ -98,10 +98,10 @@ After completing these steps you will be able to test the interface and get the 
 </soapenv:Envelope>
 ```
 
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/1fce6a4d-15d4-45ce-b4e7-90d5e38dc51a)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/1fce6a4d-15d4-45ce-b4e7-90d5e38dc51a)
 
 7. Switch to tab <b>Auth</b> and choose <b>Basic Auth</b>
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0cf19b1f-8dae-4094-8e35-2631b5eabd7d)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0cf19b1f-8dae-4094-8e35-2631b5eabd7d)
 
 8. Provide following credentials:<br>
 <b>Username</b>: sb-0f0c8c67-655f-4cf4-beff-98b7fdbdaecc!b3814|it-rt-teched23blr11!b68<br>
@@ -111,7 +111,7 @@ After completing these steps you will be able to test the interface and get the 
 
 
 10. Press <b>Send</b>. The request should return HTTP code 200 and a response with the converted text.
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/f8f11abd-42df-464b-8135-e24832e0f008)
+<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/f8f11abd-42df-464b-8135-e24832e0f008)
 
 ## Summary - Congratulations You have successfully tested your scenario now.
 
