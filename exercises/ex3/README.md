@@ -34,31 +34,31 @@ Click on <b>Configure</b>
 10. Switch to tab <b>More</b> and select <b>"XML to JSON Converter as Type</b>.
 ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/abd693af-a220-481c-95d2-8ce6fa32e1bd)
 
-11. <b>Enable "Suppress JSON Root Element"</b> and press <b>Save</b> and then <b>Close</b> to ignore the warnings. Also Press <
+11. <b>Enable "Suppress JSON Root Element"</b> and press <b>Save</b>.
 ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/b1c96604-44a0-4d69-84b7-e1c70958fa75)
 
 12. Press <b>Close</b> to close the Message box and <b>close</b> the configure Pop-Up as well.
     ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/64e0f7f8-5f13-4669-b06b-d8974c76e9a5)
 
-14. Switch to <b>Edit</b> mode at the top right corner
+13. Switch to <b>Edit</b> mode at the top right corner
 ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/59e162de-fc10-4702-9bd4-4429cfc351bc)
 
-15. add the <b>Namespace Mapping “xmlns:ns0=http://pi-elevation.bootcamp.com”</b> in the <b>Runtime Configuration</b> of the integration flow.
+14. Add the <b>Namespace Mapping “xmlns:ns0=http://pi-elevation.bootcamp.com”</b> in the <b>Runtime Configuration</b> of the integration flow.
 <br>![](/exercises/ex3/images/5.0_View_iFlow_Changes_to_Make.png)
 
-16.	In the HTTP connection of the “Request Reply”, verify that the Authentication is set to “Basic”. The credential name is automatically mapped from the REST receiver adapter on SAP Process Orchestration. This needs to be changed to the credential name maintained on the tenant, here maintain the Credential Name “PIMAS_Demo”.
+15.	In the HTTP connection of the “Request Reply”, verify that the Authentication is set to “Basic”. The credential name is automatically mapped from the REST receiver adapter on SAP Process Orchestration. This needs to be changed to the credential name maintained on the tenant, here maintain the Credential Name “PIMAS_Demo”.
 <br>![](/exercises/ex3/images/5.2_Edit_iFlow_Request_Reply.png)
 
-17.	Next, click on the  JSON to XML Converter and switch to the <b>Processing details</b>. <b>Enter “MT_Employee_RESP” as Name</b> and <b>select the namespace</b> you created earlier.
+16.	Next, click on the  JSON to XML Converter and switch to the <b>Processing details</b>. Enter <b>“MT_Employee_RESP”</b> as <b<Name</b> and <b>select the namespace</b> you created earlier.
 <br>![](/exercises/ex3/images/5.3_Edit_iFlow_JSON_to_XML.png)
 
-18.	Press <b>Save</b> and then <b>Deploy</b> to deploy the integration flow.
+17.	Press <b>Save</b> and then <b>Deploy</b> to deploy the integration flow.
     ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/3d598e71-4e98-4c94-b574-2fd370357fb0)
 
-19. You can check the deployment status via the monitor dashboard. Navigate to <b>Monitor > Integrations</b>, and select the <b>Manage Integration Content</b> tile.
+18. You can check the deployment status via the monitor dashboard. Navigate to <b>Monitor > Integrations</b>, and select the <b>Manage Integration Content</b> tile.
     ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/4e02fbcd-7789-4c8d-83b5-a1994deaca73)
    
-20. Your integration flow should be in status <b>Started</b>. From here, you get the endpoint that you need to call to test the scenario. <b>Copy the endpoint</b> as we will use it in the next step.
+19. Your integration flow should be in status <b>Started</b>. From here, you get the endpoint that you need to call to test the scenario. <b>Copy the endpoint</b> as we will use it in the next step.
     <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/defda659-1542-4cdd-99f4-7732d0cd7742)
 
 
