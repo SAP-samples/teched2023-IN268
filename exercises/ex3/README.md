@@ -52,19 +52,17 @@ Click on <b>Configure</b>
 17.	Next, click on the  JSON to XML Converter and switch to the <b>Processing details</b>. <b>Enter “MT_Employee_RESP” as Name</b> and <b>select the namespace</b> you created earlier.
 <br>![](/exercises/ex3/images/5.3_Edit_iFlow_JSON_to_XML.png)
 
-18.	Press <b>Save</b>.
+18.	Press <b>Save</b> and then <b>Deploy</b> to deploy the integration flow.
+    ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/3d598e71-4e98-4c94-b574-2fd370357fb0)
 
-19.	In order to test the scenario, select <b>Deploy</b>.
-<br>![](/exercises/ex3/images/5.3_Edit_iFlow_Deploy.png)
-
-20. You can check the deployment status via the monitor dashboard. Navigate to <b>Monitor > Integrations</b>, and select the <b>Manage Integration Content</b> tile.
+19. You can check the deployment status via the monitor dashboard. Navigate to <b>Monitor > Integrations</b>, and select the <b>Manage Integration Content</b> tile.
     ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/4e02fbcd-7789-4c8d-83b5-a1994deaca73)
    
-21. Your integration flow should be in status <b>Started</b>. From here, you get the endpoint that you need to call to test the scenario. <b>Copy the endpoint</b> as we will use it in the next step.
+20. Your integration flow should be in status <b>Started</b>. From here, you get the endpoint that you need to call to test the scenario. <b>Copy the endpoint</b> as we will use it in the next step.
     <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/defda659-1542-4cdd-99f4-7732d0cd7742)
 
 
-##Verify the Interface via Insomnia
+## Verify the Interface via Insomnia
 
 1.	Open Insomnia and <b>duplicate</b> the Request you created in exercise 2.
 ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/f38c37a9-ebe7-4891-bc99-3d633841d5b3)
