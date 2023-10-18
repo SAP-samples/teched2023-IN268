@@ -27,7 +27,7 @@ Every ICO that can be migrated has an associated template in the migration tooli
    <br>![](/exercises/ex2/images/Migrate.png)
    
 3. <b>Select the SAP Process Orchestration system</b> for which the assessment was previously done. For this, expand the Name section and select your system from the drop-down menu. Click <b>Next Step</b> to proceed with configuring the scenario.
-    <br>![](/exercises/ex2/images/PO_sys.png)
+    <br>![](/exercises/ex2/images/PO_Sys.png)
    
 4. Currently, only Integrated Configuration Objects (ICO) are supported. You can use the filter to filter out the list of ICOs and choose the appropriate scenario.  Click on <b>Show Filters</b> and fill in “http://pi-elevation.bootcamp.com“ as <b>Namespace</b>. Choose the <b>interface “SI_NumberConversion_Out”</b> from the drop-down list. Click <b>Next Step</b>.
    <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/da75731d-d657-4364-b301-de48e2fe1117)
