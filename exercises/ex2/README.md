@@ -22,28 +22,27 @@ Every ICO that can be migrated has an associated template in the migration tooli
 
 1. In the package you just created, you should be already in Edit mode. If not, on the top right click <b>Edit</b>.
    <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0c61b24e-18c1-423a-a598-a87577ac010d)
-
    
-3. Switch to tab <b>Artifacts</b> and click on  <b>Migrate</b> to start the migration wizard.
+2. Switch to tab <b>Artifacts</b> and click on  <b>Migrate</b> to start the migration wizard.
    <br>![](/exercises/ex2/images/Migrate.png)
    
-5. <b>Select the SAP Process Orchestration system</b> for which the assessment was previously done. For this, expand the Name section and select your system from the drop-down menu. Click <b>Next Step</b> to proceed with configuring the scenario.
+3. <b>Select the SAP Process Orchestration system</b> for which the assessment was previously done. For this, expand the Name section and select your system from the drop-down menu. Click <b>Next Step</b> to proceed with configuring the scenario.
     <br>![](/exercises/ex2/images/PO_sys.png)
    
-7. Currently, only Integrated Configuration Objects (ICO) are supported. You can use the filter to filter out the list of ICOs and choose the appropriate scenario.  Click on <b>Show Filters</b> and fill in “http://pi-elevation.bootcamp.com“ as <b>Namespace</b>. Choose the <b>interface “SI_NumberConversion_Out”</b> from the drop-down list. Click <b>Next Step</b>.
+4. Currently, only Integrated Configuration Objects (ICO) are supported. You can use the filter to filter out the list of ICOs and choose the appropriate scenario.  Click on <b>Show Filters</b> and fill in “http://pi-elevation.bootcamp.com“ as <b>Namespace</b>. Choose the <b>interface “SI_NumberConversion_Out”</b> from the drop-down list. Click <b>Next Step</b>.
    <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/da75731d-d657-4364-b301-de48e2fe1117)
 
    
-9. The best-fit template is identified by the migration framework and will be automatically filled in for you. In this case, it will be “P2P_SYNC_0001”. Click <b>Next Step</b>.
+5. The best-fit template is identified by the migration framework and will be automatically filled in for you. In this case, it will be “P2P_SYNC_0001”. Click <b>Next Step</b>.
     <br>![](/exercises/ex2/images/Template.png)
    
-11. Maintain any Name for your integration flow, e.g. following the pattern: soap_to_soap_sync_\<user<b>xx</b>\> where <b>xx</b> is your user from 00 to 99. Note, that the ID of your integration flow needs to be unique across all integration flows on the tenant. Click on <b>Review</b>.
+6. Maintain any Name for your integration flow, e.g. following the pattern: soap_to_soap_sync_\<user<b>xx</b>\> where <b>xx</b> is your user from 00 to 99. Note, that the ID of your integration flow needs to be unique across all integration flows on the tenant. Click on <b>Review</b>.
     <br>![](/exercises/ex2/images/Int_Name_Review.png)
     
-13. Verify the information and then click on <b>Migrate</b>.
+7. Verify the information and then click on <b>Migrate</b>.
     <br>![](/exercises/ex2/images/Final_Migrate.png)
     
-15. A new integration flow has been generated within your package. Click on the artifact to take a closer look at each individual step. The required information is automatically populated such as the connection information. Click on <b>View Artifact</b>.
+8. A new integration flow has been generated within your package. Click on the artifact to take a closer look at each individual step. The required information is automatically populated such as the connection information. Click on <b>View Artifact</b>.
    <br> ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/afce1689-5586-4813-a77f-7db9f3bdef2e)
 
 
