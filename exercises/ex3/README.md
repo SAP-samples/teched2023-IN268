@@ -1,6 +1,6 @@
 # Exercise 3 - Migrate and Test SOAP to REST Scenario
 
-In this exercise, we will create migrate a SOAP to REST scenario. 9.	For this particular scenario, not all attributes of the ICO on SAP Process Orchestration could be mapped to the parameters in the integration flow on Cloud Integration, so a couple of manual adjustments will need to be carried out which we will do as a part of the exercise.
+In this exercise, we will create and migrate a SOAP to REST scenario.	For this particular scenario, not all attributes of the ICO on SAP Process Orchestration could be mapped to the parameters in the integration flow on Cloud Integration, so a couple of manual adjustments will need to be carried out which we will do as a part of the exercise.
 
 1. Open your previously created package, and switch to the <b>Artifacts</b> tab, then switch to <b>Edit</b> Mode.
 <br>![](/exercises/ex3/images/1.OpenPreviousPackage.png)
@@ -99,5 +99,5 @@ Click on <b>Configure</b>
 
 ## Congratulations
 
-You've now successfully completed migration assessment and migrated scnearios from PI/PO to SAP Integration Suite using the migration tooling functionality.
+You've now successfully completed the migration assessment and migrated scenarios from PI/PO to SAP Integration Suite using the migration assessment and migration capability of SAP Integration Suite.
 
