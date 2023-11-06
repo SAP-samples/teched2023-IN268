@@ -39,7 +39,7 @@ Here you can find a list of rules predefined by SAP. Rules are a set of characte
    <br>![](/exercises/ex1/images/Select_Sender_Adapter_Type.png)
    
 5. Open the variant <b>MAIN_SenderAdapterType</b>
-![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/c4b005cb-e7bb-4542-8bef-61c81a566ee0)
+![image](/exercises/ex1/images/MainSenderAdapterType.png)
 
 Here, you can see all the parameters of the rules, such as Rule Match Value, Assessment Category, and the Weight assigned to each rule match value. Based on these weights, the application calculates the estimated effort, which means that some parameters, and therefore rules, have a bigger influence on the final estimation than others.
 
