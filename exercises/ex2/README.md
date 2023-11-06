@@ -21,7 +21,7 @@ After having finished the assessment of the current SAP Process Orchestration la
 Every ICO that can be migrated has an associated template in the migration tooling. It's based on these templates, the migration tooling creates equivalent integration flows in the SAP Integration Suite. Let's start with the actual migration.
 
 1. In the package you just created, you should be already in Edit mode. If not, on the top right click <b>Edit</b>.
-   <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0c61b24e-18c1-423a-a598-a87577ac010d)
+   <br>![image](/exercises/ex2/images/EditPackage.png)
    
 2. Switch to tab <b>Artifacts</b> and click on  <b>Migrate</b> to start the migration wizard.
    <br>![](/exercises/ex2/images/Migrate.png)
@@ -30,7 +30,7 @@ Every ICO that can be migrated has an associated template in the migration tooli
     <br>![](/exercises/ex2/images/PO_Sys.png)
    
 4. Currently, only Integrated Configuration Objects (ICO) are supported. You can use the filter to filter out the list of ICOs and choose the appropriate scenario.  Click on <b>Show Filters</b> and fill in “http://pi-elevation.bootcamp.com“ as <b>Namespace</b>. Choose the <b>interface “SI_NumberConversion_Out”</b> from the drop-down list. Click <b>Next Step</b>.
-   <br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/da75731d-d657-4364-b301-de48e2fe1117)
+   <br>![image](/exercises/ex2/images/ChooseScenario.png)
 
    
 5. The best-fit template is identified by the migration framework and will be automatically filled in for you. In this case, it will be “P2P_SYNC_0001”. Click <b>Next Step</b>.
@@ -43,7 +43,7 @@ Every ICO that can be migrated has an associated template in the migration tooli
     <br>![](/exercises/ex2/images/Final_Migrate.png)
     
 8. A new integration flow has been generated within your package. Click on the artifact to take a closer look at each individual step. The required information is automatically populated such as the connection information. Click on <b>View Artifact</b>.
-   <br> ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/afce1689-5586-4813-a77f-7db9f3bdef2e)
+   <br> ![image](/exercises/ex2/images/ViewArtifact.png)
 
 
 ## Deploy migrated artifacts
@@ -68,20 +68,20 @@ Now you are all set to test your scenario!
 
 After completing these steps you will be able to test the interface and get the desired result of converting a number into a text.
 
-1. Open Insomnia and click on <b>Use the local Scratch Pad</b>
-<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/5cc2dff9-b872-4746-8e62-234961db2a6b)
+1. Open Insomnia and click on <b>Use the local Scratch Pad</b>  
+<br>![image](/exercises/ex2/images/Insomnia-1.png)  
 
 2. Create a <b>New HTTP-Request</b>.
-<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/9972321f-adb2-4637-a55d-81d36f1754ea)
+<br>![image](/exercises/ex2/images/Insomnia-2.png)  
 
-3. <b>Change the Request Method from GET to POST</b>, by clicking the dropdown icon next to GET.
- <br>  ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/5741a591-a781-4cf0-b74d-ddb644434ef4)
+3. <b>Change the Request Method from GET to POST</b>, by clicking the dropdown icon next to GET.  
+<br>![image](/exercises/ex2/images/Insomnia-3.png)  
 
-4. <b>Paste the endpoint</b> from you integration flow as URL.
-<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0f81d52f-f8f7-4709-b97b-fac0c24ad4cc)
+4. <b>Paste the endpoint</b> from you integration flow as URL.  
+<br>![image](/exercises/ex2/images/Insomnia-4.png)  
 
-5. Add a <b>Body</b> of type XML.<br>
- <br>  ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/d0a2c83c-8313-443d-bcea-e841f11b0cdb)
+5. Add a <b>Body</b> of type XML.<br>  
+<br>![image](/exercises/ex2/images/Insomnia-5.png)  
 
 6. Provide following payload:
   ```xml
@@ -97,20 +97,19 @@ After completing these steps you will be able to test the interface and get the 
 </soapenv:Envelope>
 ```
 
-<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/1fce6a4d-15d4-45ce-b4e7-90d5e38dc51a)
+<br>![image](/exercises/ex2/images/Insomnia-6.png)  
 
 7. Switch to tab <b>Auth</b> and choose <b>Basic Auth</b>
-<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/0cf19b1f-8dae-4094-8e35-2631b5eabd7d)
+<br>![image](/exercises/ex2/images/Insomnia-7.png)  
 
 8. Provide following credentials:<br>
 <b>Username</b>: sb-0f0c8c67-655f-4cf4-beff-98b7fdbdaecc!b3814|it-rt-teched23blr11!b68<br>
 <b>Password</b>: 5abe805e-e0e6-42a0-864c-bc8bbba360b5$rFhomkIHs7BNnWic5VWMAz1asCp5uR5LRIX0Z62n7lw=
-<br> ![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/24e94326-0394-41c8-b8df-2cbb0e88da58)
+<br>![image](/exercises/ex2/images/Insomnia-8.png)  
 
 
-
-10. Press <b>Send</b>. The request should return HTTP code 200 and a response with the converted text.
-<br>![image](https://github.com/SAP-samples/teched2023-IN268/assets/118828983/f8f11abd-42df-464b-8135-e24832e0f008)
+9. Press <b>Send</b>. The request should return HTTP code 200 and a response with the converted text.
+<br>![image](/exercises/ex2/images/Insomnia-9.png)  
 
 ## Summary - Congratulations You have successfully tested your scenario now.
 
