@@ -43,7 +43,7 @@ Click on <b>Configure</b>
 13. Switch to <b>Edit</b> mode at the top right corner
 <br>![image](/exercises/ex3/images/ex3-13.png)
 
-14. Add the <b>Namespace Mapping “xmlns:ns0=http://pi-elevation.bootcamp.com”</b> in the <b>Runtime Configuration</b> of the integration flow.
+14. Add the <b>Namespace Mapping “xmlns:ns0=ht<span>tp://pi-elevation.bootcamp.com”</b> in the <b>Runtime Configuration</b> of the integration flow.
 <br>![](/exercises/ex3/images/5.0_View_iFlow_Changes_to_Make.png)
 
 15.	In the HTTP connection of the “Request Reply”, verify that the Authentication is set to “Basic”. The credential name is automatically mapped from the REST receiver adapter on SAP Process Orchestration. This needs to be changed to the credential name maintained on the tenant, here maintain the Credential Name “PIMAS_Demo”.
